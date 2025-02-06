@@ -36,12 +36,25 @@ func da(arg sayer){
 }
 
 func main(){
-	c1 := cat{}
-	da(c1)
-	d1 := dog{}
-	da(d1)
+	// c1 := cat{}
+	// da(c1)
+	// d1 := dog{}
+	// da(d1)
 
-	p1 := person{name:"kk"}
-	da(p1)
+	// p1 := person{name:"kk"}
+	// da(p1)
+
+	// 接口可以存储变量
+	var s sayer
+	c2 := cat{}
+	s = c2
+	fmt.Println(s)
+	p2 :=person{name:"kk"}
+	s = p2
+	fmt.Println(s)
+	d2 := dog{}
+	s = d2
+	fmt.Println(s)
+
 
 }
