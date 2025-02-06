@@ -144,5 +144,35 @@ func main() {
 	doubleArray := [2][4]int{[4]{1,2,3,4},[4]{5,6,7,8}}
 
 	easyArray := [2][4]int{{1,2,3,4},{5,6,7,8}}
+
+	// slice 
+	var fslice []int
+
+	slice := []byte{'a','b','c','d','e'}
+
+	var a,b []byte
+
+	a = ar[2:5]
+	//	ar[:n] === ar[0:n] 
+	//  ar[n:]等价于ar[n:len(ar)]
+
+	// map
+	var numbers map[string]int
+	numbers = make(map[string]int)
+	numbers["one"] = 1
+	numbers["ten"]= 10
+
+	// map是引用类型
+	m := make(map[string]string)
+	m["Hello"] = "Bonjour"
+	m1 := m
+	m1["Hello"] = "Salut"
+	// m变化，m1也变化
+
+	// slice = 一个指向数据，长度和容量的结构题的指针
+	// make 和 new区别大同小异
+
+	
+
 }
 
