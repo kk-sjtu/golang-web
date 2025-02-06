@@ -2,10 +2,37 @@ package main
 
 import "fmt"
 
+// type child struct{
+// 	like string
+// 	happy bool
+// }
+
+// type person struct{
+// 	name string
+// 	age int
+// 	child
+// }
+
 type person struct{
 	name string
 	age int
 }
+
+type Human struct{
+	name string
+	age int
+	phone string
+}
+
+type student struct{
+	Human
+	happy bool
+	phone string
+}
+
+
+
+
 func main(){
 
 	
@@ -21,6 +48,12 @@ func main(){
 	oderman,res := older(oneper,secper)
 	fmt.Printf("the older is %s,res is %d\n",oderman.name,res)
 
+	Bob := student{
+		Human:Human{"Bob",22,"111-222-333"},
+		happy:true,
+		phone:"222-333-444", // access first
+	}
+	fmt.Println("Bob's phone is:",Bob.phone)
 
 }
 
