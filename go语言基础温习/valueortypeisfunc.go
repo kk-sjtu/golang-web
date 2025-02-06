@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+type testInt func(int) bool
 func isodd(num int) bool{
 	if num%2 ==0{
 		return false
